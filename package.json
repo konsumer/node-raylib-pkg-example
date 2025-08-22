@@ -1,0 +1,28 @@
+{
+  "name": "node-raylib-pkg-example",
+  "version": "0.0.0",
+  "private": true,
+  "author": "konsumer",
+  "license": "MIT",
+  "scripts": {
+    "build": "pkg .",
+    "start": "node test.js"
+  },
+  "pkg": {
+    "assets": ["node_modules/**/*.node"],
+    "outputPath": "dist",
+    "targets": [
+      "node18-macos-arm64",
+      "node18-macos-x64"
+    ]
+  },
+  "dependencies": {
+    "raylib": "^0.14.0"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^6.6.0"
+  },
+  "bin": {
+    "node-raylib-pkg-example": "test.js"
+  }
+}
