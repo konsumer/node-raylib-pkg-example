@@ -5,16 +5,15 @@
   "author": "konsumer",
   "license": "MIT",
   "scripts": {
-    "build": "pkg .",
+    "build:windows": "pkg -t node18-win .",
+    "build:macos": "pkg -t node18-macos .",
+    "build:linux": "pkg -t node18-linux .",
+    "build:bun": "bun build --compile --outfile=dist/node-raylib-pkg-example-bun ./test.js",
     "start": "node test.js"
   },
   "pkg": {
     "assets": ["node_modules/**/*.node"],
-    "outputPath": "dist",
-    "targets": [
-      "node18-macos-arm64",
-      "node18-macos-x64"
-    ]
+    "outputPath": "dist"
   },
   "dependencies": {
     "raylib": "^0.14.0"
