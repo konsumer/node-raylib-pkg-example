@@ -1,6 +1,5 @@
 This is a simple example of bundling your node-raylib game into a single executable.
 
-
 ```sh
 # install tools
 npm i
@@ -20,3 +19,8 @@ npm run build:macos
 # build using bunjs instead of node/pkg
 bun run build:bun
 ```
+
+## See also
+
+- [raylib-3651](https://github.com/konsumer/raylib-3651)
+- [gamepadtool](https://www.generalarcade.com/gamepadtool/)
