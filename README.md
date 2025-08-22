@@ -18,6 +18,5 @@ npm run build:linux
 npm run build:macos
 
 # build using bunjs instead of node/pkg
-npm run build:bun
-
+bun run build:bun
 ```
